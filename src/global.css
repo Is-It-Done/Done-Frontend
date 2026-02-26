@@ -1,9 +1,29 @@
-:root {
-  --font-display:
+@import 'tailwindcss';
+@import 'uniwind';
+
+/* 
+TODO: Define colors
+*/
+
+@theme {
+  --color-slate: #2D3436;
+  --color-orange: #FF7675;
+  --color-white: #FFFFFF;
+
+  --color-background: var(--color-white);
+  --color-foreground: var(--color-slate);
+  --color-primary: var(--color-orange);
+
+  --font-sans:
     Spline Sans, Inter, ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji,
     Segoe UI Symbol, Noto Color Emoji;
   --font-mono:
     ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+}
+
+:root {
+  --font-display: var(--font-sans);
+  --font-mono: var(--font-mono);
   --font-rounded: 'SF Pro Rounded', 'Hiragino Maru Gothic ProN', Meiryo, 'MS PGothic', sans-serif;
   --font-serif: Georgia, 'Times New Roman', serif;
 }
